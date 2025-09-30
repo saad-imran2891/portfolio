@@ -42,8 +42,6 @@
             line-height: 1.6;
             cursor: none;
         }
-
-        /* Custom Cybernetic Cursor */
         .cyber-cursor {
             position: fixed;
             top: 0;
@@ -82,8 +80,6 @@
             z-index: 9997;
             opacity: 0;
         }
-
-        /* Cybernetic Background Systems */
         #cyber-background {
             position: fixed;
             top: 0;
@@ -149,8 +145,6 @@
             background: linear-gradient(90deg, var(--cyber-blue), transparent);
             transform-origin: 0 0;
         }
-
-        /* Quantum Loader */
         #quantum-loader {
             position: fixed;
             top: 0;
@@ -253,7 +247,6 @@
             transition: width 0.3s ease;
         }
 
-        /* Navigation Systems */
         .cyber-nav {
             display: none;
         }
@@ -335,7 +328,6 @@
             opacity: 1;
         }
 
-        /* Dot Navigation - Clean Dots Only */
         .nav-dots {
             position: fixed;
             right: 2rem;
@@ -346,7 +338,7 @@
             gap: 1.5rem;
             z-index: 90;
             
-            /* Ensure no background or border on container */
+      
             background: transparent !important;
             border: none !important;
             box-shadow: none !important;
@@ -365,17 +357,17 @@
             position: relative;
         }
 
-        /* REMOVE tooltip background - keep only text */
+       
         .nav-dot::before {
             content: attr(data-section);
             position: absolute;
             right: 25px;
             top: 50%;
             transform: translateY(-50%);
-            /* REMOVE background color */
+           
             background: transparent !important;
-            color: var(--cyber-blue); /* Use your cyber blue for text */
-            padding: 0.5rem 0; /* Remove horizontal padding */
+            color: var(--cyber-blue); 
+            padding: 0.5rem 0;
             border-radius: 0;
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.8rem;
@@ -385,7 +377,7 @@
             transition: opacity 0.3s ease;
             text-transform: uppercase;
             z-index: 100;
-            /* Add text shadow for better visibility */
+            
             text-shadow: 0 0 10px rgba(0, 243, 255, 0.8);
         }
 
@@ -422,12 +414,10 @@
             background: rgba(0, 243, 255, 0.3);
         }
 
-        /* Hide navbar since we're removing it */
         .cyber-nav {
             display: none;
         }
 
-        /* Responsive - hide dots on mobile */
         @media (max-width: 768px) {
             .nav-dots {
                 display: none;
@@ -608,8 +598,6 @@
             background: rgba(0, 243, 255, 0.1);
             box-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
         }
-
-        /* Hologram Container with Quantum Materialization */
         .hologram-container {
             position: relative;
             display: flex;
@@ -725,7 +713,6 @@
             font-family: 'JetBrains Mono', monospace;
         }
 
-        /* Neural Glow Effect */
         .neural-glow {
             position: absolute;
             width: 100%;
@@ -742,8 +729,6 @@
             50% { opacity: 0.7; transform: scale(1); }
             100% { opacity: 0.3; transform: scale(0.95); }
         }
-
-        /* Skills Section with Neural Activation */
         .skills-section {
             padding: 6rem 2rem;
             position: relative;
@@ -881,8 +866,6 @@
             0% { transform: translateX(-100%); }
             100% { transform: translateX(100%); }
         }
-
-        /* Projects Neural Network */
         .projects-section {
             padding: 6rem 2rem;
             position: relative;
@@ -988,7 +971,6 @@
             color: var(--cyber-blue);
         }
 
-        /* Professional Journey Timeline */
         .journey-section {
             padding: 6rem 2rem;
             position: relative;
@@ -1095,7 +1077,6 @@
             font-family: 'JetBrains Mono', monospace;
         }
 
-        /* Certifications Security Wall */
         .certifications-section {
             padding: 6rem 2rem;
             position: relative;
@@ -1178,7 +1159,6 @@
             font-size: 0.7rem;
         }
 
-        /* Contact Section with Encryption */
         .contact-section {
             padding: 6rem 2rem;
             position: relative;
@@ -1342,7 +1322,6 @@
             left: 100%;
         }
 
-        /* Download Resume System */
         .download-section {
             padding: 4rem 2rem;
             text-align: center;
@@ -1411,7 +1390,6 @@
             font-size: 0.8rem;
         }
 
-        /* Footer with Quantum Entanglement */
         .cyber-footer {
             padding: 3rem 2rem;
             background: rgba(5, 5, 16, 0.9);
@@ -1468,7 +1446,6 @@
             font-size: 0.9rem;
         }
 
-        /* Neural Network Visualization */
         .neural-network {
             position: absolute;
             top: 0;
@@ -1496,7 +1473,6 @@
             transform-origin: 0 0;
         }
 
-        /* Slider Systems */
         .slider-container {
             position: relative;
             max-width: 1200px;
@@ -1569,7 +1545,6 @@
             right: -25px;
         }
 
-        /* Progress Summary Animation */
         .progress-summary {
             max-width: 1200px;
             margin: 4rem auto 0;
@@ -1687,7 +1662,6 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        /* Progress Metrics Slider */
         .progress-slider-container {
             position: relative;
             max-width: 1200px;
@@ -1716,7 +1690,6 @@
             align-items: center;
         }
 
-        /* Responsive Design */
         @media (max-width: 968px) {
             .hero-content {
                 grid-template-columns: 1fr;
@@ -1821,7 +1794,7 @@
                 justify-content: center;
             }
         }
-        /* Slider Styles for Skills Section */
+
 .slider-container {
     position: relative;
     margin: 10px 0;
@@ -1881,7 +1854,7 @@
     background: var(--cyber-purple);
     box-shadow: 0 0 20px var(--cyber-purple);
 }
-/* Download Resume System */
+
 .download-section {
     padding: 4rem 2rem;
     text-align: center;
@@ -1988,8 +1961,6 @@
     gap: 0.5rem;
     animation: pulse 2s infinite;
 }
-
-/* Download Animation */
 @keyframes downloadProgress {
     0% { width: 0%; }
     100% { width: 100%; }
@@ -2004,8 +1975,6 @@
     width: 0%;
     transition: width 0.3s ease;
 }
-
-/* Success Animation */
 .download-success {
     animation: successPulse 0.5s ease-in-out;
 }
@@ -2015,7 +1984,6 @@
     50% { transform: scale(1.05); }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .download-container {
         padding: 2rem;
@@ -2034,7 +2002,6 @@
     </style>
 </head>
 <body>
-    <!-- Quantum Loader -->
     <div id="quantum-loader">
         <div class="loader-content">
             <div class="binary-rain" id="binary-rain"></div>
@@ -2045,12 +2012,9 @@
             </div>
         </div>
     </div>
-
-    <!-- Custom Cursor -->
     <div class="cyber-cursor" id="cursor"></div>
     <div class="cursor-follower" id="cursor-follower"></div>
 
-    <!-- Cybernetic Background -->
     <div id="cyber-background">
         <div class="cyber-grid"></div>
         <div class="circuit-overlay"></div>
@@ -2059,7 +2023,6 @@
 
     <div class="cyber-container">
        
-        <!-- Navigation Dots -->
         <div class="nav-dots">
             <div class="nav-dot active" data-section="home"></div>
             <div class="nav-dot" data-section="skills"></div>
@@ -2069,7 +2032,6 @@
             <div class="nav-dot" data-section="contact"></div>
         </div>
 
-        <!-- Hero Section -->
         <section class="hero-section" id="home">
             <div class="hero-content">
                 <div class="hero-text">
@@ -2111,9 +2073,9 @@
                     <div class="hologram-frame">
                         <div class="neural-glow"></div>
                         <div class="hologram-card">
-                            <div class="profile-image">
-                                <div class="profile-placeholder">SI</div>
-                            </div>
+                           <div class="profile-image">
+    <img src="" alt="Saad Imran" class="profile-photo">
+</div>
                             <h3>PROGRESS METRICS</h3>
                             <p>Cloud Security Path</p>
                             
@@ -2133,9 +2095,6 @@
             </div>
         </section>
 
-        <!-- Skills Section with Progress Metrics Slider -->
-        <!-- Skills Section with Progress Metrics Slider -->
-<!-- Skills Section with Card Slider -->
 <section class="skills-section" id="skills">
     <div class="neural-network" id="neural-network"></div>
     <div class="section-header">
@@ -2145,7 +2104,7 @@
     
     <div class="slider-container">
         <div class="slider-track" id="skills-slider">
-            <!-- Slide 1: Core Programming -->
+           
             <div class="slider-item">
                 <div class="skill-category">
                     <div class="category-header">
@@ -2179,7 +2138,6 @@
                 </div>
             </div>
             
-            <!-- Slide 2: Security Foundations -->
             <div class="slider-item">
                 <div class="skill-category">
                     <div class="category-header">
@@ -2224,7 +2182,6 @@
                 </div>
             </div>
             
-            <!-- Slide 3: Infrastructure & Cloud -->
             <div class="slider-item">
                 <div class="skill-category">
                     <div class="category-header">
@@ -2269,7 +2226,6 @@
                 </div>
             </div>
             
-            <!-- Slide 4: AI & Advanced Tech -->
             <div class="slider-item">
                 <div class="skill-category">
                     <div class="category-header">
@@ -2320,7 +2276,6 @@
     </div>
 </section>
 
-        <!-- Professional Journey -->
         <section class="journey-section" id="journey">
             <div class="section-header">
                 <h2 class="section-title">LEARNING JOURNEY</h2>
@@ -2369,7 +2324,6 @@
             </div>
         </section>
 
-        <!-- Certifications Section with Slider -->
         <section class="certifications-section" id="certifications">
             <div class="section-header">
                 <h2 class="section-title">LEARNING PATH & CERTIFICATIONS</h2>
@@ -2414,7 +2368,6 @@
                         </div>
                     </div>
 
-                    <!-- Additional certification cards for infinite scroll -->
                     <div class="slider-item">
                         <div class="certification-card">
                             <div class="certification-badge">
@@ -2457,10 +2410,9 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section class="contact-section" id="contact">
             <div class="section-header">
-                <h2 class="section-title">INITIATE CONTACT</h2>
+                <h2 class="section-title">CONTACT</h2>
                 <p class="section-subtitle">Get in touch for collaborations and opportunities</p>
             </div>
             
@@ -2482,7 +2434,7 @@
                         </div>
                         <div class="contact-details">
                             <h3>Phone</h3>
-                            <p>+1 (555) 101-0101</p>
+                            <p>012399202087</p>
                         </div>
                     </div>
                     
@@ -2534,7 +2486,7 @@
                 </div>
             </div>
         </section>
-        <!-- Download Resume System -->
+       
 <section class="download-section" id="resume">
     <div class="download-container">
         <div class="download-icon">
@@ -2553,7 +2505,6 @@
     </div>
 </section>
 
-        <!-- Footer -->
         <footer class="cyber-footer">
             <div class="social-links">
                 <a href="#" class="social-link">
@@ -2571,7 +2522,6 @@
     </div>
 
       <script>
-        // Slider Systems
         const sliders = {
             projects: {
                 currentIndex: 0,
@@ -2598,18 +2548,15 @@
             
             slider.currentIndex += direction;
             
-            // Infinite loop
             if (slider.currentIndex >= slider.totalSlides) {
                 slider.currentIndex = 0;
             } else if (slider.currentIndex < 0) {
                 slider.currentIndex = slider.totalSlides - 1;
             }
-            
-            // Update slide position
-            const slideWidth = track.querySelector('.slider-item').offsetWidth + 32; // 32px for gap
+
+            const slideWidth = track.querySelector('.slider-item').offsetWidth + 32; 
             track.style.transform = `translateX(-${slider.currentIndex * slideWidth}px)`;
-            
-            // Update active dot
+    
             dots.forEach((dot, index) => {
                 dot.classList.toggle('active', index === slider.currentIndex);
             });
@@ -2622,12 +2569,10 @@
             const dots = nav.querySelectorAll('.slider-dot');
             
             slider.currentIndex = index;
-            
-            // Update slide position
-            const slideWidth = track.querySelector('.slider-item').offsetWidth + 32; // 32px for gap
+  
+            const slideWidth = track.querySelector('.slider-item').offsetWidth + 32; 
             track.style.transform = `translateX(-${slider.currentIndex * slideWidth}px)`;
             
-            // Update active dot
             dots.forEach((dot, i) => {
                 dot.classList.toggle('active', i === slider.currentIndex);
             });
@@ -2645,7 +2590,6 @@
             }
         }
 
-        // Particle Network System
         class ParticleNetwork {
             constructor(container) {
                 this.container = container;
@@ -2668,12 +2612,10 @@
                 for (let i = 0; i < particleCount; i++) {
                     const particle = document.createElement('div');
                     particle.className = 'particle';
-                    
-                    // Random position
+
                     const x = Math.random() * this.container.offsetWidth;
                     const y = Math.random() * this.container.offsetHeight;
-                    
-                    // Random color
+ 
                     const color = colors[Math.floor(Math.random() * colors.length)];
                     
                     particle.style.left = `${x}px`;
@@ -2709,19 +2651,17 @@
 
             updateParticles() {
                 this.particles.forEach(particle => {
-                    // Move particle
+
                     particle.x += particle.vx;
                     particle.y += particle.vy;
-                    
-                    // Bounce off walls
+
                     if (particle.x <= 0 || particle.x >= this.container.offsetWidth) {
                         particle.vx *= -1;
                     }
                     if (particle.y <= 0 || particle.y >= this.container.offsetHeight) {
                         particle.vy *= -1;
                     }
-                    
-                    // Apply mouse influence
+  
                     const dx = this.mouse.x - particle.x;
                     const dy = this.mouse.y - particle.y;
                     const distance = Math.sqrt(dx * dx + dy * dy);
@@ -2731,12 +2671,10 @@
                         particle.vx -= (dx / distance) * force * 0.1;
                         particle.vy -= (dy / distance) * force * 0.1;
                     }
-                    
-                    // Update position
+ 
                     particle.element.style.left = `${particle.x}px`;
                     particle.element.style.top = `${particle.y}px`;
-                    
-                    // Mouse proximity glow effect
+     
                     if (distance < 100) {
                         const intensity = (100 - distance) / 100;
                         particle.element.style.transform = `scale(${1 + intensity * 0.5})`;
@@ -2749,11 +2687,10 @@
             }
 
             updateConnections() {
-                // Remove existing connections
+           
                 this.connections.forEach(conn => conn.remove());
                 this.connections = [];
                 
-                // Create new connections between close particles
                 for (let i = 0; i < this.particles.length; i++) {
                     for (let j = i + 1; j < this.particles.length; j++) {
                         const p1 = this.particles[i];
@@ -2785,7 +2722,6 @@
             }
         }
 
-        // Custom Cybernetic Cursor System
         class CyberCursor {
             constructor() {
                 this.cursor = document.getElementById('cursor');
@@ -2807,7 +2743,6 @@
                     this.createTrail(e.clientX, e.clientY);
                 });
 
-                // Hover effects for interactive elements
                 const interactiveElements = document.querySelectorAll('button, a, .project-card, .skill-category, .contact-method, .social-link, .tech-tag, .certification-card, .timeline-content, .slider-arrow, .slider-dot');
                 
                 interactiveElements.forEach(el => {
@@ -2824,7 +2759,6 @@
                     });
                 });
 
-                // Special effect for project cards
                 const projectCards = document.querySelectorAll('.project-card');
                 projectCards.forEach(card => {
                     card.addEventListener('mousemove', (e) => {
@@ -2846,7 +2780,6 @@
                     });
                 });
 
-                // Special effect for skill categories
                 const skillCategories = document.querySelectorAll('.skill-category');
                 skillCategories.forEach(card => {
                     card.addEventListener('mousemove', (e) => {
@@ -2868,7 +2801,6 @@
                     });
                 });
 
-                // Magnetic effect for buttons
                 const buttons = document.querySelectorAll('.cyber-button, .download-btn, .submit-btn');
                 buttons.forEach(button => {
                     button.addEventListener('mousemove', (e) => {
@@ -2906,7 +2838,6 @@
                 
                 this.trails.push(trail);
                 
-                // Remove old trails
                 if (this.trails.length > 10) {
                     const oldTrail = this.trails.shift();
                     if (oldTrail && oldTrail.parentNode) {
@@ -2914,7 +2845,6 @@
                     }
                 }
                 
-                // Animate trail
                 setTimeout(() => {
                     trail.style.opacity = '0.7';
                     trail.style.transform = 'scale(1)';
@@ -2932,8 +2862,6 @@
                 }, 10);
             }
         }
-
-        // Quantum Loader System
         class QuantumLoader {
             constructor() {
                 this.loader = document.getElementById('quantum-loader');
@@ -2982,7 +2910,6 @@
             }
         }
 
-        // Navigation System
         class NavigationSystem {
             constructor() {
                 this.nav = document.querySelector('.nav-dots');
@@ -3051,22 +2978,18 @@
             }
         }
 
-        // Initialize when DOM is loaded
         document.addEventListener('DOMContentLoaded', () => {
             new QuantumLoader();
             new NavigationSystem();
             new CyberCursor();
             
-            // Initialize particle network
             const particleContainer = document.getElementById('particle-network');
             new ParticleNetwork(particleContainer);
             
-            // Initialize sliders
             startAutoSlide('projects');
             startAutoSlide('certifications');
             startAutoSlide('skills');
             
-            // Pause auto-slide on hover
             const projectSlider = document.getElementById('projects-slider');
             const certSlider = document.getElementById('certifications-slider');
             const skillsSlider = document.getElementById('skills-slider');
@@ -3080,7 +3003,7 @@
             skillsSlider.addEventListener('mouseenter', () => stopAutoSlide('skills'));
             skillsSlider.addEventListener('mouseleave', () => startAutoSlide('skills'));
         });
-        // Download Resume System
+  
 class DownloadResume {
     constructor() {
         this.downloadBtn = document.getElementById('download-resume-btn');
@@ -3093,7 +3016,6 @@ class DownloadResume {
             this.simulateDownload();
         });
 
-        // Add to CyberCursor hover effects
         const cyberCursor = new CyberCursor();
         this.downloadBtn.addEventListener('mouseenter', () => {
             cyberCursor.cursor.style.transform = 'scale(1.8)';
@@ -3109,17 +3031,15 @@ class DownloadResume {
     }
 
     simulateDownload() {
-        // Create progress bar
+    
         const progressBar = document.createElement('div');
         progressBar.className = 'download-progress';
         this.downloadContainer.appendChild(progressBar);
 
-        // Update button text
         const originalText = this.downloadBtn.innerHTML;
         this.downloadBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> DOWNLOADING...';
         this.downloadBtn.disabled = true;
 
-        // Simulate download progress
         let progress = 0;
         const progressInterval = setInterval(() => {
             progress += Math.random() * 15;
@@ -3127,7 +3047,6 @@ class DownloadResume {
                 progress = 100;
                 clearInterval(progressInterval);
                 
-                // Complete download
                 setTimeout(() => {
                     progressBar.style.width = '100%';
                     
@@ -3136,10 +3055,8 @@ class DownloadResume {
                         this.downloadBtn.classList.add('download-success');
                         this.downloadContainer.classList.add('download-success');
                         
-                        // Create success effect
                         this.createSuccessEffect();
                         
-                        // Reset after 2 seconds
                         setTimeout(() => {
                             this.downloadBtn.innerHTML = originalText;
                             this.downloadBtn.disabled = false;
@@ -3147,7 +3064,6 @@ class DownloadResume {
                             this.downloadContainer.classList.remove('download-success');
                             progressBar.remove();
                             
-                            // Trigger actual download (replace with your resume file)
                             this.triggerActualDownload();
                             
                         }, 2000);
@@ -3159,7 +3075,7 @@ class DownloadResume {
     }
 
     createSuccessEffect() {
-        // Create particle effect
+   
         for (let i = 0; i < 10; i++) {
             setTimeout(() => {
                 const particle = document.createElement('div');
@@ -3176,7 +3092,6 @@ class DownloadResume {
                 
                 this.downloadContainer.appendChild(particle);
                 
-                // Animate particle
                 const angle = (i / 10) * Math.PI * 2;
                 const distance = 50 + Math.random() * 50;
                 const targetX = Math.cos(angle) * distance;
@@ -3190,7 +3105,6 @@ class DownloadResume {
                     easing: 'ease-out'
                 });
                 
-                // Remove particle after animation
                 setTimeout(() => {
                     particle.remove();
                 }, 1000);
@@ -3204,10 +3118,9 @@ class DownloadResume {
     }
 
     triggerActualDownload() {
-        // Replace this with your actual resume file URL
+
         const resumeUrl = 'path/to/your/resume.pdf';
-        
-        // Create temporary link for download
+
         const link = document.createElement('a');
         link.href = resumeUrl;
         link.download = 'Saad_Imran_Resume.pdf';
@@ -3217,7 +3130,6 @@ class DownloadResume {
     }
 }
 
-// Initialize download system when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     new DownloadResume();
 });
