@@ -1999,6 +1999,67 @@
         font-size: 0.9rem;
     }
 }
+/* Mobile Interaction Fixes */
+@media (max-width: 768px) {
+    
+    body {
+        cursor: auto !important;
+    }
+    .cyber-cursor, .cursor-follower, .cursor-trail {
+        display: none !important;
+    }
+    
+    .skill-category,
+    .project-card,
+    .certification-card,
+    .timeline-content,
+    .contact-method,
+    .social-link,
+    .tech-tag,
+    .slider-dot,
+    .cyber-button,
+    .download-btn,
+    .submit-btn {
+        cursor: pointer !important;
+        pointer-events: auto !important;
+    }
+   
+    .slider-track {
+        touch-action: pan-y;
+    }
+    
+    .slider-item {
+        pointer-events: auto !important;
+    }
+ 
+    button, 
+    .cyber-button,
+    .download-btn,
+    .submit-btn,
+    .slider-arrow {
+        pointer-events: auto !important;
+        cursor: pointer !important;
+    }
+    
+    .form-input,
+    .form-textarea {
+        pointer-events: auto !important;
+        cursor: text !important;
+    }
+    
+    .nav-dots {
+        pointer-events: auto !important;
+    }
+    
+    .nav-dot {
+        cursor: pointer !important;
+        pointer-events: auto !important;
+    }
+}
+.social-link:nth-child(4):hover {
+    background: linear-gradient(45deg, #EA4335, #FBBC05, #34A853, #4285F4) !important;
+    color: white !important;
+}
     </style>
 </head>
 <body>
@@ -2050,7 +2111,7 @@
                     
                     <div class="hero-stats">
                         <div class="stat-item">
-                            <div class="stat-number" id="stat-projects">15+</div>
+                            <div class="stat-number" id="stat-projects">10+</div>
                             <div class="stat-label">PROJECTS BUILT</div>
                         </div>
                         <div class="stat-item">
@@ -2419,14 +2480,14 @@
             <div class="contact-container">
                 <div class="contact-info">
                     <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Email</h3>
-                            <p>saad.imran2428@gmail.com</p>
-                        </div>
-                    </div>
+    <div class="contact-icon">
+        <i class="fas fa-envelope"></i>
+    </div>
+    <div class="contact-details">
+        <h3>Email</h3>
+        <a href="mailto:saad.imran2428@gmail.com">saad.imran2428@gmail.com</a>
+    </div>
+</div>
                     
                     <div class="contact-method">
                         <div class="contact-icon">
@@ -2434,7 +2495,7 @@
                         </div>
                         <div class="contact-details">
                             <h3>Phone</h3>
-                            <p>012399202087</p>
+                            <p>03312083927</p>
                         </div>
                     </div>
                     
@@ -2460,7 +2521,7 @@
                 </div>
                 
                 <div class="contact-form">
-                    <form id="cyber-contact-form" netlify>
+                    <form id="cyber-contact-form">
                         <div class="form-group">
                             <label class="form-label" for="name">Name</label>
                             <input type="text" id="name" class="form-input" placeholder="Enter your name" required>
@@ -2506,17 +2567,27 @@
 </section>
 
         <footer class="cyber-footer">
-            <div class="social-links">
-                <a href="#" class="social-link">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="social-link">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="#" class="social-link">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
+ <div class="social-links">
+    <!-- GitHub -->
+    <a href="https://github.com/saad-imran2891" class="social-link" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+    
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/saad-imran-a4558a28b" class="social-link" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    
+    <!-- Instagram -->
+    <a href="https://instagram.com/itx.saad28" class="social-link" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    
+    <!-- Gmail -->
+    <a href="mailto:saad.imran2428@gmail.com" class="social-link">
+        <i class="fas fa-envelope"></i>
+    </a>
+</div>
             <p class="footer-text">SAAD IMRAN | ASPIRING CLOUD SECURITY ENGINEER</p>
         </footer>
     </div>
@@ -3133,7 +3204,34 @@ class DownloadResume {
 document.addEventListener('DOMContentLoaded', () => {
     new DownloadResume();
 });
+
+function fixMobileInteractions() {
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    
+    if (isMobile || window.innerWidth <= 768) {
+ 
+        const cursor = document.getElementById('cursor');
+        const follower = document.getElementById('cursor-follower');
+        
+        if (cursor) cursor.style.display = 'none';
+        if (follower) follower.style.display = 'none';
+
+        document.body.style.cursor = 'auto';
+
+        const interactiveElements = document.querySelectorAll('.skill-category, .project-card, .certification-card, .cyber-button, .slider-dot');
+        
+        interactiveElements.forEach(el => {
+            el.style.touchAction = 'manipulation';
+            el.style.webkitTapHighlightColor = 'rgba(0, 243, 255, 0.3)';
+        });
+        const sliders = document.querySelectorAll('.slider-track');
+        sliders.forEach(slider => {
+            slider.style.touchAction = 'pan-y';
+        });
+    }
+}
+document.addEventListener('DOMContentLoaded', fixMobileInteractions);
+window.addEventListener('resize', fixMobileInteractions);
     </script>
 </body>
 </html>
-
