@@ -154,9 +154,9 @@ This is original work created by [SAAD IMRAN]. All code is proprietary and may n
 
 **Your Name**  
 Aspiring Cloud Security Engineer & AI Developer  
-- Email: your.email@domain.com  
-- Portfolio: your-portfolio-url.com  
-- GitHub: github-username
+- Email: sad.imran2428@gmail.com  
+- Portfolio: saadimran24-portfolio netlify.com  
+- GitHub: saad-imran2891
 
 ## 🎯 Purpose Statement
 
